@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using RazorPagesMovie10.Data;
 
 namespace RazorPagesMovie10.Migrations
 {
     [DbContext(typeof(RazorPagesMovie10Context))]
-    partial class RazorPagesMovie10ContextModelSnapshot : ModelSnapshot
+    [Migration("20210615212809_DataAnnotations")]
+    partial class DataAnnotations
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
